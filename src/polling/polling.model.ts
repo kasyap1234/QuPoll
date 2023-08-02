@@ -1,6 +1,6 @@
-export class Poll{
-    id: Number; 
-    question: string; 
+export class Poll {
+    id: number;
+    question: string;
     options: string[];
-    votes: number[]; 
-}
+    votes: number[]; // Array to store the number of votes for each option
+  }
