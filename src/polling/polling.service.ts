@@ -20,6 +20,8 @@ export class PollingService {
         this.polls.push(poll);
     }
 
+    
+
     getPollById(id: number): Poll {
         const poll = this.polls.find((poll) => poll.id === id);
         if (!poll) {
