@@ -7,7 +7,7 @@ import { UserModule } from './auth/user/user.module';
 import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://dadou:1234@cluster0.yp7n1ob.mongodb.net/')],
+  imports: [MongooseModule.forRoot('mongodb+srv://dadou:1234@cluster0.yp7n1ob.mongodb.net/'),PollingModule],
   controllers: [AppController],
   providers: [AppService],
 })
