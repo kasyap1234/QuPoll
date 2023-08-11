@@ -7,7 +7,7 @@ export class PollingController {
   constructor(private readonly pollingService: PollingService,
     private readonly userService: UserService
     ) { } // Add the closing curly brace here.
-
+    
   @Get()
   getAllPolls(): Promise<Poll[]> {
     return this.pollingService.getAllPolls();

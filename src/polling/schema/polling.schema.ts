@@ -3,7 +3,7 @@ import {Document} from 'mongoose';
 export type PollDocument=Poll & Document; 
 @Schema()
 export class Poll {
-    id : string; 
+    id : number; 
     
     @Prop({required: true})
     question: string; 
