@@ -1,16 +1,17 @@
-
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PollList from './components/PollList';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Poll from './components/Poll';
-function App() {
+
+const App = () => {
   return (
-    
-      <div className="App">
-        
-      </div>
-  
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"  element={<PollList />} />
+        <Route path="/poll/:pollId" element={<Poll />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

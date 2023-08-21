@@ -1,23 +1,28 @@
-import React,{useState,useEffect} from 'react';
-import axios from 'axios'; 
-const PollList=()=>{
-    const [polls,setPolls]=useState([]);
-    useEffect(() => {
-        axios.get('http://localhost:5500/polling')
-          .then(response => setPolls(response.data))
-          .catch(error => console.error(error));
-      }, []);
-      return (
-        <div>
-      <h2>Polls</h2>
-      <ul>
+import React, { useState, useEffect } from 'react';
+import PollItem from './PollItem';
+import axios from 'axios';
+import './styles/PollList.css'; // Import the CSS file with your styling
+
+const PollList = () => {
+  const [polls, setPolls] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5500/polling')
+      .then(response => setPolls(response.data))
+      .catch(error => console.error(error));
+  }, []);
+
+  return (
+    <div className="poll-list">
+      <h2 className="poll-list-header">Polls</h2>
+      <div className="polls-container">
         {polls.map(poll => (
-          <li key={poll.id}>
-            <a href={`/poll/${poll.id}`}>{poll.question}</a>
-          </li>
+          <PollItem key={poll.id} poll={poll} />
         ))}
-      </ul>
+      </div>
     </div>
-      )
-}
+  );
+};
+
 export default PollList;
+
