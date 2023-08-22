@@ -1,0 +1,73 @@
+/* LandingPage.css */
+
+.landing-container {
+    background-color: #ffe268; /* Bright yellow background */
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .landing-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .landing-description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    background-color: #9c5cb8; /* Purple feature background */
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature i {
+    font-size: 3rem;
+    color: #ffe268; /* Bright yellow icon color */
+    margin-bottom: 15px;
+  }
+  
+  .feature h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature p {
+    font-size: 1.2rem;
+  }
+  
+  .get-started-button {
+    background-color: #9c5cb8; /* Purple button background */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .get-started-button:hover {
+    background-color: #ffe268; /* Bright yellow on hover */
+  }
+  
+  
