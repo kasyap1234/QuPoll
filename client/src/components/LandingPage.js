@@ -10,6 +10,10 @@ const LandingPage = () => {
    
 
     const navigate=useNavigate();
+    const Navigated2=()=>{
+      navigate("/createpoll");
+    }
+
     const Navigated=()=>{
       navigate("/polllist"); 
 
@@ -35,6 +39,7 @@ const LandingPage = () => {
       </div>
 
       <button  onClick={Navigated} className="get-started-button">Get Started</button>
+      <button onClick={Navigated2} className="create-poll-button">Create Poll</button>
     </div>
   );
 };

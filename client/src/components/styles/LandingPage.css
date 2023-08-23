@@ -1,8 +1,8 @@
 /* LandingPage.css */
 
 .landing-container {
-    background-color: #ffe268; /* Bright yellow background */
-    color: #ffffff;
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
     padding: 80px 0;
     height: 100vh;
@@ -13,8 +13,9 @@
   }
   
   .landing-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
+    color: #2196F3; /* Blue */
   }
   
   .landing-description {
@@ -31,7 +32,7 @@
   }
   
   .feature {
-    background-color: #9c5cb8; /* Purple feature background */
+    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     flex: 1;
@@ -41,7 +42,7 @@
   
   .feature i {
     font-size: 3rem;
-    color: #ffe268; /* Bright yellow icon color */
+    color: #FFC107; /* Yellow */
     margin-bottom: 15px;
   }
   
@@ -55,8 +56,8 @@
   }
   
   .get-started-button {
-    background-color: #9c5cb8; /* Purple button background */
-    color: #ffffff;
+    background-color: #FFC107; /* Yellow */
+    color: #fff;
     border: none;
     padding: 15px 30px;
     font-size: 1.5rem;
@@ -67,7 +68,18 @@
   }
   
   .get-started-button:hover {
-    background-color: #ffe268; /* Bright yellow on hover */
+    background-color: #FFD54F; /* Lighter Yellow */
   }
-  
+  .create-poll-button {
+    background-color: #2196F3; /* Blue */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px;
+  }
   

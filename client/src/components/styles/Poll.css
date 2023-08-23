@@ -8,7 +8,7 @@
   
   .poll-question {
     font-size: 24px;
-    color: #40128B; 
+    color: #355ef4; 
     margin-bottom: 20px;
   }
   
@@ -51,7 +51,7 @@
   }
   
   .vote-button {
-    background-color: #9c51b6;
+    background-color: #196CFF;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -61,6 +61,6 @@
   }
   
   .vote-button:hover {
-    background-color: #8248a6;
+    background-color: #00308F; 
   }
   
