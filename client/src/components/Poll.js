@@ -14,7 +14,7 @@ const Poll = () => {
   }, [pollId]);
 
   const handleVote = (option) => {
-    // Add your voting logic here
+    
   };
 
   if (!poll) {
